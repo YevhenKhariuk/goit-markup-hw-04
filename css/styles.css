@@ -81,7 +81,6 @@ img {
 }
 
 .header-contacts {
-  display: flex;
   margin-left: auto;
   display: flex;
   gap: 50px;
@@ -92,6 +91,12 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+}
+
+.mailtel-soc-icon {
+  stroke: currentColor;
+  fill: var(--fifth-color);
+  margin-right: 10px;
 }
 
 /*
@@ -145,6 +150,7 @@ img {
 }
 
 .header-mailtel {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -367,6 +373,8 @@ img {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
+  gap: 40px;
 }
 
 .footer-logo {
@@ -394,13 +402,48 @@ img {
   margin-left: auto;
 }
 
+.container-footer-mailtel {
+  max-width: 261px;
+}
+
+/*footer soc*/
 .footer-soc {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--first-color);
+  text-transform: uppercase;
+  color: var(--second-color);
   margin-bottom: 20px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: var(--second-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--soc-icon-bg-focushover);
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: var(--soc-icon-color-focushover);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
 }
 
 .adress {
