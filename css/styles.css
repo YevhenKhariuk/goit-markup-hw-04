@@ -55,7 +55,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red;*/
+  /*outline: 2px solid red;*/
 }
 
 /*----header----*/
@@ -94,8 +94,7 @@ img {
 }
 
 .mailtel-soc-icon {
-  stroke: currentColor;
-  fill: var(--fifth-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -219,6 +218,17 @@ img {
 }
 
 /*--benefits--*/
+
+.container-benefits-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+}
 
 .visually-hidden {
   position: absolute;
@@ -369,6 +379,49 @@ img {
   gap: 30px;
 }
 
+/*customers*/
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--soc-icon-color);
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: var(--soc-icon-color);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  cursor: pointer;
+  border-color: var(--soc-icon-bg-focushover);
+}
+
+.customers-item:hover .customers-icon,
+.customers-item:focus .customers-icon {
+  fill: var(--soc-icon-bg-focushover);
+}
+
 /*---footer---*/
 
 .container-footer {
@@ -505,6 +558,8 @@ img {
 .btn-portfolio-wse:focus {
   background-color: var(--third-color);
   color: var(--second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-portfolio {
@@ -525,6 +580,8 @@ img {
 .btn-portfolio:focus {
   background-color: var(--third-color);
   color: var(--second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-desc {
@@ -565,4 +622,13 @@ img {
 .portfolio-item-container {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
