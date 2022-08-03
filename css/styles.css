@@ -151,6 +151,7 @@ img {
 .header-mailtel {
   display: flex;
   font-weight: 500;
+  align-items: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -381,6 +382,11 @@ img {
 
 /*customers*/
 
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -388,13 +394,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 94px;
+  gap: 30px;
 }
 
 .customers-item {
@@ -403,22 +407,25 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
+}
+
+.customers-link {
   border: 1px solid var(--soc-icon-color);
   border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .customers-icon {
   fill: var(--soc-icon-color);
 }
 
-.customers-item:hover,
-.customers-item:focus {
-  cursor: pointer;
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--soc-icon-bg-focushover);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--soc-icon-bg-focushover);
 }
 
@@ -427,7 +434,7 @@ img {
 .container-footer {
   display: flex;
   align-items: baseline;
-  gap: 40px;
+  gap: 70px;
 }
 
 .footer-logo {
@@ -450,13 +457,12 @@ img {
   background-color: var(--sixth-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.container-footer-mailtel {
-  max-width: 261px;
+.footer-adress-block {
+  width: 231px;
 }
 
 /*footer soc*/
