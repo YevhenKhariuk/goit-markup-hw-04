@@ -224,7 +224,6 @@ img {
   display: flex;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
   justify-content: center;
@@ -245,6 +244,7 @@ img {
 }
 
 .benefits-hed {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -412,7 +412,11 @@ img {
 .customers-link {
   border: 1px solid var(--soc-icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
 }
 
 .customers-icon {
